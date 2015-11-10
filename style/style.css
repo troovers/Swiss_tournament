@@ -1,0 +1,164 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #013E36;
+}
+
+body {
+	height: 100%;
+}
+
+@font-face {
+    font-family: Open Sans Condensed;
+    src: url(open_sans_condensed.ttf);
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	margin: 0 50px;
+	text-align: center;
+	border-bottom: 2px solid #007600;
+	position: relative;
+}
+
+#header h1 {
+	margin: 20px 0;
+	color: #007600;
+	font-family: Open Sans Condensed;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+#header #nav_links {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	text-align: right;
+}
+
+#header #nav_links a {
+	position: relative;
+}
+
+#content {
+	text-align: center;
+	min-width: 100%;
+}
+
+#content .rondes {
+	margin: 0 auto;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 30px 15px;
+	position: relative;
+	height: auto;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+#content .wedstrijden {
+	margin: 0 15px;
+	padding: 10px;
+	min-width: 350px; 
+	border: 2px solid #007600;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	position: relative;
+	height: auto;
+	display: table-cell;
+	height: 100%;
+	text-align: top;
+}
+
+table tr td {
+	padding: 3px;
+}
+
+table tr th {
+	padding: 20px 10px 10px 10px;
+	font-family: Open Sans Condensed;
+	font-size: 35px;
+	color: #A4A4A4;
+	font-weight: bold;
+	font-style: italic;
+}
+
+input[type="text"] {
+	border: 1px solid #CCCCCC;
+	width: 10px;
+	padding: 3px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius:	3px;
+	text-align: center;
+	font-size: 11px;
+}
+
+input[type="submit"] {
+	padding: 7px 15px;
+	margin: 10px 0 0 0;
+	background-color: #006200;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Open Sans Condensed;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover { 
+	background-color: #007600;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+	opacity: 0.5;
+    z-index: 10000;
+}
+
+#uitslagen {
+	width: 100%;
+	box-sizing: border-box;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	z-index: 10001;
+}
+
+#uitslagen {
+	font-size: 13px;
+	line-height: 25px;
+}
+
+#uitslagen h2 {
+	font-family: Open Sans Condensed;
+	font-size: 24px;
+	color: #007600;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	font-weight: normal;
+}

@@ -1,0 +1,1 @@
+﻿21-04-2016 23:13:19 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET AUTO_INCREMENT = 1' at line 1 NEAR Line: 29 OF File: C:\xampp\htdocs\Swiss_tournament\index.php

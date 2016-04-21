@@ -163,7 +163,7 @@ input[type="submit"]:hover {
 	font-weight: normal;
 }
 
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):link {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):visited {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):hover {text-decoration: none; color: #08449D; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):active {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
+a:link {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}
+a:visited {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}
+a:hover {text-decoration: underline; color: #007600; font-family: Verdana; font-size: 12px;}
+a:active {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}

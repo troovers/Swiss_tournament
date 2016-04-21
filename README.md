@@ -1,2 +1,5 @@
 # Swiss_tournament
-Swiss-system tournament with managers, written with PHP and MySQL
+Swiss-system tournament written with PHP and MySQL
+
+Author: Thomas Roovers
+Last edited: 2016-04-21

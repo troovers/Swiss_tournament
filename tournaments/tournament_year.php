@@ -5,21 +5,17 @@ include("../functions.php");
 
 unset($_SESSION['results']);
 
-
 // Get the tournament filename
 $filename = basename(__FILE__, ".php");
 $edition = explode("_", $filename);
-
 
 // Check if the tables of the tournament exist
 $table_existence = mysqli_query($connect, "SHOW TABLES LIKE '".$filename."'");
 $table_exists = mysqli_num_rows($table_existence) > 0;
 
-
 if($table_exists == TRUE) {
-
 	// Get all of the participants
-	$participants = mysqli_query($connect, "SELECT player_id, name FROM ".$filename) or die(mysqli_error($connect));
+	$participants = mysqli_query($connect, "SELECT player_id, name FROM ".$filename);
 
 	if(mysqli_num_rows($participants) != 0) {
 		if(mysqli_num_rows($participants) % 2 != 0) {

@@ -31,7 +31,7 @@ body {
 	margin: 20px 0;
 	color: #007600;
 	font-family: Open Sans Condensed;
-	font-size: 50px;
+	font-size: 40px;
 	text-transform: uppercase;
 }
 
@@ -67,9 +67,9 @@ body {
 	padding: 10px;
 	min-width: 350px; 
 	border: 2px solid #007600;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	position: relative;
 	height: auto;
 	display: table-cell;
@@ -162,3 +162,8 @@ input[type="submit"]:hover {
 	margin: 0 0 10px 0;
 	font-weight: normal;
 }
+
+a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):link {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
+a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):visited {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
+a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):hover {text-decoration: none; color: #08449D; font-family: Verdana; font-size: 12px;}
+a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):active {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}

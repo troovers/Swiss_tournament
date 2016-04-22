@@ -228,7 +228,7 @@ if(isset($_POST['add']) && !empty($_POST['name'])) {
 				echo "<td>\n";
 				echo "<form name='delete' method='post' action='".$_SERVER['PHP_SELF']."'>\n";
 				echo "<input type='hidden' name='filename' value='".$filename."'>\n";
-				echo "<input type='submit' name='delete' value='Verwijderen'>\n";
+				echo "<input type='submit' name='delete' onclick='return confirm(\"Weet u zeker dat u dit toernooi wilt verwijderen?\")' value='Verwijderen'>\n";
 				echo "</form>\n";
 				echo "</td>\n";
 				echo "</tr>\n";

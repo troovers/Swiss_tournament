@@ -1,6 +1,6 @@
 <?php
 $username = "root";
-$password = "tr3804500";
+$password = "";
 $host = "localhost";
 $database = "swiss_tournament";
 

@@ -66,7 +66,7 @@ body {
 	margin: 0 15px;
 	padding: 10px;
 	min-width: 350px; 
-	border: 2px solid #007600;
+	border: 2px solid #CCCCCC;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -102,24 +102,22 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-	padding: 7px 15px;
-	margin: 10px 0 0 0;
-	background-color: #006200;
+	padding: 7px 10px;
+	margin: 0;
+	position: relative;
+	border: 1px solid #007600;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	border: 0;
-	color: #FFFFFF;
-	cursor: pointer;
 	font-family: Open Sans Condensed;
 	font-size: 17px;
+	color: #007600;
 	text-transform: uppercase;
-}
-
-input[type="submit"]:hover { 
-	background-color: #007600;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	text-decoration: none;
 }
 
 #overlay {
@@ -163,7 +161,33 @@ input[type="submit"]:hover {
 	font-weight: normal;
 }
 
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):link {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):visited {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):hover {text-decoration: none; color: #08449D; font-family: Verdana; font-size: 12px;}
-a:not([name="link_button"], [name="portal_link"], [name="logout_link"]):active {text-decoration: none; color: #0E5CD0; font-family: Verdana; font-size: 12px;}
+span.win {
+	color: green;
+}
+
+span.loss {
+	color: red;
+}
+
+div#succes {
+	padding: 10px;
+	margin: 20px 0;
+	border: 1px solid #9FDE9C;
+	color: #3E933A;
+	position: relative;
+	float: left;
+	background: #E2F7D8;
+}
+
+div#error {
+	padding: 10px;
+	margin: 20px 0;
+	border: 1px solid #FFBBBB;
+	color: #DA1D1D;
+    background: #FFDFDF;
+}
+
+a:link {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}
+a:visited {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}
+a:hover {text-decoration: underline; color: #007600; font-family: Verdana; font-size: 12px;}
+a:active {text-decoration: none; color: #007600; font-family: Verdana; font-size: 12px;}

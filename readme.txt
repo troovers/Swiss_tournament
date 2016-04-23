@@ -10,7 +10,7 @@
 
 
 # 1. First of all
-This could is free for use by anyone who has trouble with programming a Swiss Tournament with PHP.
+This code is free for use by anyone who has trouble with programming a Swiss Tournament with PHP.
 I've written this for use of my own, but thought it might be of some help to others.
 
 
@@ -52,7 +52,7 @@ The tournament will end after the final has taken place.
 
 
 # 4. Questions
-If you have any questions regarding the code, you can e-mail me on this address: info@thomasroovers.nl.
+If you have any questions regarding the code, you can e-mail me on this address: info@geekk.nl.
 
 
 ### Good luck! ###

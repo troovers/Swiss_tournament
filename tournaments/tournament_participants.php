@@ -3,6 +3,8 @@ session_start();
 include("../connect.php");
 include("../functions.php");
 
+$finished = FALSE;
+$started = FALSE;
 
 // Get the tournament name
 if(isset($_GET['edition'])) {
@@ -12,44 +14,21 @@ if(isset($_GET['edition'])) {
 } elseif(isset($_POST['delete'])) {
 	$filename = $_POST['filename'];
 } else {
-	header("Location: index.php");
+	header("Location: ../index.php");
 	exit();
 }
 
+
 // Check whether the tournament is finished and has started yet
-$finished = mysqli_query($connect, "SELECT first, second FROM tournament_results WHERE filename = '".$filename."'");
-$started = mysqli_query($connect, "SELECT round_id FROM ".$filename."_rounds");
+$finished_query = mysqli_query($connect, "SELECT first, second FROM tournament_results WHERE filename = '".$filename."'");
+$started_query = mysqli_query($connect, "SELECT round_id FROM ".$filename."_rounds");
 
-if(mysqli_num_rows($finished) > 0) {
-	$is_finished = TRUE;
-} else {
-	$is_finished = FALSE;
+if(mysqli_num_rows($finished_query) > 0) {
+	$finished = TRUE;
 }
 
-if(mysqli_num_rows($started) > 0) {
-	$is_started = TRUE;
-} else {
-	$is_started = FALSE;
-}
-
-
-// Add a participant to the tournament
-if(isset($_POST['add']) && !empty($_POST['name'])) {
-	$name = htmlentities($_POST['name'], ENT_QUOTES, "UTF-8");
-	
-	$get_participant = mysqli_query($connect, "SELECT player_id FROM ".$filename." WHERE name = '".$name."'");
-	
-	if(mysqli_num_rows($get_participant) == 0) {	
-		$add_participant = mysqli_query($connect, "INSERT INTO ".$filename." SET name = '".$name."'");
-		
-		unset($_POST);
-		
-		$succes = "<div id='succes'>De deelnemer is toegevoegd</div>";
-	} else {
-		$error = "<div id='error'>Deze deelnemer staat al in de lijst</div>";
-	}
-} elseif(isset($_POST['add']) && empty($_POST['name'])) {
-	$error = "<div id='error'>U heeft geen naam ingevuld</div>";
+if(mysqli_num_rows($started_query) > 0) {
+	$started = TRUE;
 }
 
 
@@ -59,7 +38,7 @@ if(isset($_POST['delete'])) {
 	
 	$remove_participant = mysqli_query($connect, "DELETE FROM ".$filename." WHERE player_id = '".$player_id."'");
 	
-	$succes = "<div id='succes'>De deelnemer is verwijderd</div>";
+	$message = "<div id='succes'>De deelnemer is verwijderd</div>";
 }
 ?>
 <!DOCTYPE html>
@@ -67,6 +46,13 @@ if(isset($_POST['delete'])) {
 	<head>
 		<title><?php echo str_replace("_", " ", $filename); ?> - Deelnemers</title>
 		<link rel="stylesheet" href="../style/participants.css" type="text/css">
+		
+		<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="../style/jquery-ui.min.css" type="text/css">
+		
+		<script type="text/javascript" src="../js/hoverIntent.js"></script>
+		<script type="text/javascript" src="../js/functions.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -79,25 +65,27 @@ if(isset($_POST['delete'])) {
 				$table_exists = mysqli_num_rows($table_existence) > 0;
 
 				if($table_exists != TRUE) {
-					echo "De tabel met deelnemers bestaat (nog) niet. Maak deze eerst aan door een nieuwe editie aan te maken.";
+					echo "<div id='error'>De tabel met deelnemers bestaat (nog) niet. Maak deze eerst aan door een nieuwe editie aan te maken</div>";
 					exit();
 				}
 				
-				if(isset($succes)) {
-					echo $succes;
-				} elseif(isset($error)) {
-					echo $error;
+				echo "<div id='response'>\n";
+				if(isset($message)) {
+					echo $message;
+				} elseif(isset($_GET['msg']) && $_GET['msg'] == "sf_add") {
+					echo "<div id='succes'>De deelnemer is toegevoegd</div>\n";
 				}
+				echo "</div>\n";
 				
 				
 				// If the tournament hasn't started yet, participants can be added
-				if($is_finished == FALSE) {
+				if($finished == FALSE) {
 					?>
-					<form name="add" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">	
+					<form name="add_participant" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">	
 						<table border="0" cellpadding="0" cellspacing="0">
 							<tr>
 								<td width="200">
-									<input type="text" name="name" value="<?php if(isset($_POST['add'])) { echo $_POST['name']; } ?>" placeholder="Naam">
+									<input type="text" name="name" value="" placeholder="Naam">
 								</td>
 								<td width="100">
 									<input type="hidden" name="filename" value="<?php echo $filename; ?>">
@@ -122,7 +110,7 @@ if(isset($_POST['delete'])) {
 					echo "<th width='40'>Winst</th>\n";
 					
 					// If the tournament is not finished or has started yet, display the delete column
-					if($is_finished == FALSE && $is_started == FALSE) {
+					if($finished == FALSE && $started == FALSE) {
 						echo "<th width='30'>&nbsp;</th>\n";
 					}
 					
@@ -138,7 +126,7 @@ if(isset($_POST['delete'])) {
 						
 						
 						// If the tournament is not finished or has started yet, display the delete button
-						if($is_finished == FALSE && $is_started == FALSE) {
+						if($finished == FALSE && $started == FALSE) {
 							echo "<td>\n";
 							echo "<form method='post' action='".$_SERVER['PHP_SELF']."'>\n";
 							echo "<input type='hidden' name='id' value='".$row['player_id']."'>\n";

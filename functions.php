@@ -1,11 +1,4 @@
 <?php
-$username = "root";
-$password = "tr3804500";
-$host = "localhost";
-$database = "swiss_tournament";
-
-$connect = @mysqli_connect($host, $username, $password, $database) or die ('Could not connect to database: ' . mysqli_connect_error());
-
 function initializeDatabase() {
 	global $connect; 
 	
@@ -16,7 +9,6 @@ function initializeDatabase() {
 		PRIMARY KEY(`filename`)
 	)");
 }
-
 
 function createNewEdition($filename) {
 	global $connect; 
@@ -39,4 +31,23 @@ function createNewEdition($filename) {
 		PRIMARY KEY(`round_id`)
 	)");
 }
+
+function log_mysql_error($message, $line, $file, $output = false) {
+	//error_log(date("d-m-Y H:i:s")." : ".$message, 3, "/var/logs/php_errors.log");
+	file_put_contents("C:/xampp/htdocs/Swiss_tournament/logs/php_error.log", date("d-m-Y H:i:s")." MYSQL ERROR: ".$message." NEAR Line: ".$line." OF File: ".$file."\n", FILE_APPEND | LOCK_EX);
+	
+	if($output == true) {
+		return "<div id='error'>Er is iets mis gegaan, probeer het opnieuw</div>";
+	}
+}
+
+function log_php_error($errno, $errstr, $errfile, $errline) {
+	// you'd have to import or set up the connection here 
+	file_put_contents("C:/xampp/htdocs/Swiss_tournament/logs/php_error.log", date("d-m-Y H:i:s")." PHP ERROR: (".$errno.") ".$errstr." NEAR Line: ".$errline." OF File: ".$errfile."\n", FILE_APPEND | LOCK_EX);
+
+	/* Don't execute PHP internal error handler */
+	return true;
+}
+
+$old_error_handler = set_error_handler("log_php_error");
 ?>

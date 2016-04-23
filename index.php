@@ -91,30 +91,6 @@ if(isset($_POST['delete'])) {
 		$response = "<div id='succes'>Het toernooi is verwijderd</div>";
 	} while(0);
 }
-
-
-// Add a new tournament to the system
-if(isset($_POST['add']) && !empty($_POST['name'])) {
-	$year = $_POST['year'];
-	$name = htmlentities($_POST['name'], ENT_QUOTES, "UTF-8");
-	
-	// Check if the tournament already exists as a file
-	if(!file_exists("tournaments/".$name."_".$year.".php")) {	
-		$file = "tournaments/tournament_year.php";
-		$newfile = "tournaments/".$name."_".$year.".php";
-		
-		// Copy the tournament template file and rename it to be named after the tournament
-		if(!copy($file, $newfile)) {
-			$response = "<div id='error'>Er is iets mis gegaan, probeer het opnieuw</div>";
-		} else {
-			$response = "<div id='succes'>Het toernooi is aangemaakt</div>";
-		}
-	} else {
-		$response = "<div id='error'>Deze editie bestaat al. Deze dient eerst verwijdert te worden.</div>";
-	}
-} elseif(isset($_POST['add']) && empty($_POST['name'])) {
-	$response = "<div id='error'>U heeft geen naam ingevuld</div>";
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -148,6 +124,13 @@ if(isset($_POST['add']) && !empty($_POST['name'])) {
 			text-decoration: underline;
 		}
 		</style>
+		
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="style/jquery-ui.min.css" type="text/css">
+		
+		<script type="text/javascript" src="js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
 	</head>
 	<body>
 		<?php
@@ -164,17 +147,21 @@ if(isset($_POST['add']) && !empty($_POST['name'])) {
 		echo "<div id='content'>\n";
 		echo "<h1>Toernooien</h1>\n";
 		
+		echo "<div id='response'>\n";
 		if(isset($response)) {
 			echo $response;
-		} 
+		} elseif(isset($_GET['msg']) && $_GET['msg'] == "sf_add") {
+			echo "<div id='succes'>Het toernooi is toegevoegd</div>\n";
+		}
+		echo "</div>\n";
 		
 		// Initialize the form to add a new tournament
-		echo "<form name='add' method='post' action='".$_SERVER['PHP_SELF']."'>\n";
+		echo "<form name='add_tournament' method='post' action='".$_SERVER['PHP_SELF']."'>\n";
 		echo "<table>\n";
 		echo "<tr>\n";
 		echo "<td width='210'>\n";
 		
-		echo isset($_POST['submit']) ? "<input type='text' name='name' value='".$_POST['name']."' placeholder='Naam'>\n" : "<input type='text' name='name' value='' placeholder='Naam'>\n";
+		echo "<input type='text' name='name' value='' placeholder='Naam'>\n";
 		
 		echo "</td>\n";
 		echo "<td width='90'>\n";
@@ -222,7 +209,7 @@ if(isset($_POST['add']) && !empty($_POST['name'])) {
 				echo "<td>\n";
 				echo "<form name='clear' method='post' action='".$_SERVER['PHP_SELF']."'>\n";
 				echo "<input type='hidden' name='filename' value='".$filename."'>\n";
-				echo "<input type='submit' name='clear' value='Legen'>\n";
+				echo "<input type='submit' name='clear' onclick='return confirm(\"Weet u zeker dat u de gegevens van dit toernooi wilt verwijderen?\")' value='Legen'>\n";
 				echo "</form>\n";
 				echo "</td>\n";
 				echo "<td>\n";

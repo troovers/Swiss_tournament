@@ -1,1 +1,83 @@
 ﻿21-04-2016 23:13:19 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET AUTO_INCREMENT = 1' at line 1 NEAR Line: 29 OF File: C:\xampp\htdocs\Swiss_tournament\index.php
+22-04-2016 16:33:26 PHP ERROR: (8) Undefined offset: 0 NEAR Line: 196 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:50 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 216 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 226 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 228 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 232 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 16:46:51 PHP ERROR: (8) Array to string conversion NEAR Line: 250 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:01:22 PHP ERROR: (8) Undefined variable: player_2_id NEAR Line: 78 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:01:22 PHP ERROR: (8) Undefined variable: player_2_id NEAR Line: 78 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:01:22 PHP ERROR: (8) Undefined variable: player_2_id NEAR Line: 78 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:01:22 PHP ERROR: (8) Undefined variable: player_2_id NEAR Line: 78 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:01:22 PHP ERROR: (8) Undefined variable: player_2_id NEAR Line: 78 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:19:24 PHP ERROR: (8) Undefined variable: M1P2 NEAR Line: 81 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:19:24 PHP ERROR: (8) Undefined variable: M1P1 NEAR Line: 82 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:22:08 PHP ERROR: (8) Undefined variable: M1P1 NEAR Line: 74 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+22-04-2016 17:22:08 PHP ERROR: (8) Undefined variable: M1P2 NEAR Line: 75 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php

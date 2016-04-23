@@ -179,6 +179,8 @@ if(isset($_POST['save'])) {
 												array_push(${"round_".$i."_wins_".$y}, $row['name']);
 											}
 											
+											print_r(${"round_".$i."_wins_".$y});
+											
 											// If the number of players is odd, we create an extra player, called "Bye"
 											if(count(${"round_".$i."_wins_".$y}) % 2 != 0) {
 												array_push(${"round_".$i."_wins_".$y}, "Bye");
@@ -250,7 +252,7 @@ if(isset($_POST['save'])) {
 												
 												// If this match contains a player named Bye, and player 2 is Bye, then give him 0 points, and give the other player 1 point
 												if($player_1 == "Bye" || $player_2 == "Bye") {
-													$player_2 == "Bye" ? 0 : 1;
+													$points = $player_2 == "Bye" ? 0 : 1;
 													
 													echo "<input type='text' disabled value='".$points."'>";
 													echo "<input type='hidden' name='M".$z."_PP2' value='".$points."'>";

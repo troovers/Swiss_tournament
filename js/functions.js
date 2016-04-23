@@ -5,6 +5,8 @@
 		$(this).animate({"border": "1px solid #007600", backgroundColor: "#FFFFFF", color: "#007600"}, 300);
 	});
 	
+	$("form[name='add_participant'] input[name='name']").focus();
+	
 	$("form[name='wedstrijden'] input[type='submit']").click(function (e) {
 		$("input:not([type='submit'])").css({"border": "1px solid #CCCCCC", "background-color": "#FFFFFF"});
 		

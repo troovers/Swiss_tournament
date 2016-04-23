@@ -209,7 +209,7 @@ if(isset($_POST['delete'])) {
 				echo "<td>\n";
 				echo "<form name='clear' method='post' action='".$_SERVER['PHP_SELF']."'>\n";
 				echo "<input type='hidden' name='filename' value='".$filename."'>\n";
-				echo "<input type='submit' name='clear' value='Legen'>\n";
+				echo "<input type='submit' name='clear' onclick='return confirm(\"Weet u zeker dat u de gegevens van dit toernooi wilt verwijderen?\")' value='Legen'>\n";
 				echo "</form>\n";
 				echo "</td>\n";
 				echo "<td>\n";

@@ -81,3 +81,18 @@
 22-04-2016 17:19:24 PHP ERROR: (8) Undefined variable: M1P1 NEAR Line: 82 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
 22-04-2016 17:22:08 PHP ERROR: (8) Undefined variable: M1P1 NEAR Line: 74 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
 22-04-2016 17:22:08 PHP ERROR: (8) Undefined variable: M1P2 NEAR Line: 75 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+23-04-2016 14:24:28 PHP ERROR: (8) Undefined offset: 0 NEAR Line: 219 OF File: C:\xampp\htdocs\Swiss_tournament\tournaments\Plankentoernooi_2016.php
+23-04-2016 14:44:55 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:44:55 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'ren'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:10 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:10 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'ren'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:11 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:11 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'ren'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:12 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:12 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'ren'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:15 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:15 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Ren&eacute; van Nijnatten'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:32 PHP ERROR: (8) Undefined variable: filename NEAR Line: 15 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:45:32 MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name = 'Ren&eacute; van Nijnatten'' at line 1 NEAR Line: 18 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\participant_handling.php
+23-04-2016 14:54:10 PHP ERROR: (8) Undefined index: year NEAR Line: 13 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\tournament_handling.php
+23-04-2016 14:54:19 PHP ERROR: (8) Undefined index: year NEAR Line: 13 OF File: C:\xampp\htdocs\Swiss_tournament\handlers\tournament_handling.php

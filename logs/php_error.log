@@ -1,1 +1,25 @@
-﻿
+﻿24-04-2016 22:16:00 PHP ERROR: (8) Undefined variable: connect NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:00 PHP ERROR: (2) mysqli_query() expects parameter 1 to be mysqli, null given NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:00 PHP ERROR: (8) Undefined variable: connect NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:00 PHP ERROR: (2) mysqli_error() expects parameter 1 to be mysqli, null given NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:00 MYSQL ERROR:  NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:31 PHP ERROR: (8) Undefined variable: connect NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:31 PHP ERROR: (2) mysqli_query() expects parameter 1 to be mysqli, null given NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:31 PHP ERROR: (8) Undefined variable: connect NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:31 PHP ERROR: (2) mysqli_error() expects parameter 1 to be mysqli, null given NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:16:31 MYSQL ERROR:  NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:00 PHP ERROR: (8) Undefined variable: connect NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:00 PHP ERROR: (2) mysqli_query() expects parameter 1 to be mysqli, null given NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:00 PHP ERROR: (8) Undefined variable: connect NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:00 PHP ERROR: (2) mysqli_error() expects parameter 1 to be mysqli, null given NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:00 MYSQL ERROR:  NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:03 PHP ERROR: (8) Undefined variable: connect NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:03 PHP ERROR: (2) mysqli_query() expects parameter 1 to be mysqli, null given NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:03 PHP ERROR: (8) Undefined variable: connect NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:03 PHP ERROR: (2) mysqli_error() expects parameter 1 to be mysqli, null given NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:03 MYSQL ERROR:  NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:46 PHP ERROR: (8) Undefined variable: connect NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:46 PHP ERROR: (2) mysqli_query() expects parameter 1 to be mysqli, null given NEAR Line: 55 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:46 PHP ERROR: (8) Undefined variable: connect NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:46 PHP ERROR: (2) mysqli_error() expects parameter 1 to be mysqli, null given NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php
+24-04-2016 22:18:46 MYSQL ERROR:  NEAR Line: 58 OF File: C:\xampp\htdocs\Swiss_tournament\functions.php

@@ -19,6 +19,19 @@ if(isset($_GET['edition'])) {
 }
 
 
+if(isset($_GET['shuffle']) && $_GET['shuffle'] == "true") {
+	$shuffled_array = array();
+	
+	$participants = mysqli_query($connect, "SELECT name FROM ".$filename);
+	
+	while($participant = mysqli_fetch_assoc($participants)) {
+		$shuffled_array[] = $participant["name"];
+	}
+	
+	$message = shuffleParticipants($shuffled_array, $filename);
+}
+
+
 // Check whether the tournament is finished and has started yet
 $finished_query = mysqli_query($connect, "SELECT first, second FROM tournament_results WHERE filename = '".$filename."'");
 $started_query = mysqli_query($connect, "SELECT round_id FROM ".$filename."_rounds");
@@ -143,6 +156,8 @@ if(isset($_POST['delete'])) {
 				}
 				
 				echo "<br><br><a href='".$filename.".php'>Terug naar het toernooi</a>\n";
+				
+				echo $started == FALSE && mysqli_num_rows($participants) > 1 ? " | <a href='?edition=".$filename."&shuffle=true'>Herschik de deelnemerslijst</a>\n" : "";
 				?>
 			</div>
 		</div>

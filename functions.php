@@ -50,4 +50,24 @@ function log_php_error($errno, $errstr, $errfile, $errline) {
 }
 
 $old_error_handler = set_error_handler("log_php_error");
+
+function shuffleParticipants($shuffled_array, $tournament_name) {
+	global $connect;
+	
+	$clear_participants = mysqli_query($connect, "TRUNCATE TABLE ".$tournament_name);
+		
+	if(!$clear_participants) {
+		return log_mysql_error(mysqli_error($connect), __LINE__, __FILE__, true);
+	}
+	
+	shuffle($shuffled_array);
+	
+	foreach($shuffled_array AS $key => $value) {
+		$participant[] = "('".$value."')";
+	}
+	
+	mysqli_query($connect, "INSERT INTO ".$tournament_name." (name) VALUES ".implode(",", $participant));
+	
+	return "<div id='succes'>De deelnemerslijst is opnieuw gerangschikt</div>\n";
+}
 ?>
